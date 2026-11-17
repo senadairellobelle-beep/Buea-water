@@ -4,7 +4,7 @@
   "private": true,
   "description": "Static deployment-ready website for Buea Water Connect",
   "scripts": {
-    "build": "echo 'Static site ready for deployment'",
+    "build": "node build.js",
     "start": "serve -s HTML -l 3000",
     "dev": "serve -s HTML -l 3000"
   },

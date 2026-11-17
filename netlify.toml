@@ -1,3 +1,43 @@
 [build]
-  publish = "HTML"
+  publish = "public"
   command = "npm run build"
+
+[[redirects]]
+  from = "/"
+  to = "/HTML/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/index.html"
+  to = "/HTML/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/dashboard.html"
+  to = "/HTML/dashboard.html"
+  status = 200
+
+[[redirects]]
+  from = "/suppliers.html"
+  to = "/HTML/suppliers.html"
+  status = 200
+
+[[redirects]]
+  from = "/request-water.html"
+  to = "/HTML/request-water.html"
+  status = 200
+
+[[redirects]]
+  from = "/supplier-register.html"
+  to = "/HTML/supplier-register.html"
+  status = 200
+
+[[redirects]]
+  from = "/supplier-login.html"
+  to = "/HTML/supplier-login.html"
+  status = 200
+
+[[redirects]]
+  from = "/supplier-dashboard.html"
+  to = "/HTML/supplier-dashboard.html"
+  status = 200

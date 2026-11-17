@@ -1,0 +1,3 @@
+[build]
+  publish = "HTML"
+  command = "npm run build"

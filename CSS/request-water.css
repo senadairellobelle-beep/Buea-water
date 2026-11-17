@@ -1,0 +1,826 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #123047;
+    background: #f7fbfd;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* NAVBAR */
+
+.navbar {
+    height: 75px;
+    padding: 0 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    border-bottom: 1px solid #e5eef2;
+}
+
+.logo {
+    font-size: 23px;
+    font-weight: 800;
+}
+
+.logo span {
+    color: #1595d0;
+}
+
+nav {
+    display: flex;
+    gap: 28px;
+}
+
+nav a {
+    color: #526875;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+nav a:hover {
+    color: #1595d0;
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+button,
+.btn-primary,
+.btn-outline,
+.btn-white {
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background: #1595d0;
+    color: white;
+    border: none;
+}
+
+.btn-primary:hover {
+    background: #087bb3;
+}
+
+.btn-login {
+    background: transparent;
+    border: none;
+    color: #526875;
+}
+
+.btn-outline {
+    border: 1px solid #1595d0;
+    color: #1595d0;
+    background: white;
+}
+/* =========================================
+   BUEA WATER CONNECT
+   REQUEST WATER PAGE
+========================================= */
+
+
+/* =========================================
+   GENERAL
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4faff;
+    color: #123047;
+    line-height: 1.6;
+}
+
+button,
+input,
+select,
+textarea {
+    font-family: inherit;
+}
+
+
+/* =========================================
+   NAVIGATION
+========================================= */
+
+.navbar {
+    min-height: 80px;
+    padding: 0 7%;
+
+    background: #ffffff;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    border-bottom: 1px solid #e5eef3;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: 800;
+    color: #123047;
+}
+
+.logo span:last-child {
+    color: #159bd3;
+}
+
+.logo-icon {
+    font-size: 24px;
+}
+
+.navbar nav {
+    display: flex;
+    gap: 32px;
+}
+
+.navbar nav a {
+    text-decoration: none;
+
+    color: #526875;
+
+    font-size: 15px;
+    font-weight: 600;
+
+    transition: 0.2s;
+}
+
+.navbar nav a:hover,
+.navbar nav a.active {
+    color: #159bd3;
+}
+
+.nav-buttons {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.btn-login {
+    border: none;
+    background: transparent;
+
+    color: #123047;
+
+    padding: 12px 18px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+.btn-primary {
+    border: none;
+
+    background: #159bd3;
+    color: #ffffff;
+
+    padding: 13px 22px;
+
+    border-radius: 8px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.btn-primary:hover {
+    background: #0c83b6;
+}
+
+
+/* =========================================
+   MAIN PAGE
+========================================= */
+
+.request-page {
+    width: 86%;
+    max-width: 1250px;
+
+    margin: 0 auto;
+
+    padding: 60px 0 80px;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.request-header {
+    margin-bottom: 40px;
+}
+
+.section-label {
+    display: inline-block;
+
+    margin-bottom: 8px;
+
+    color: #159bd3;
+
+    font-size: 12px;
+    font-weight: 800;
+
+    letter-spacing: 1.5px;
+}
+
+.request-header h1 {
+    font-size: 42px;
+
+    line-height: 1.15;
+
+    color: #123047;
+}
+
+.request-header h1 span {
+    color: #159bd3;
+}
+
+.request-header p {
+    max-width: 650px;
+
+    margin-top: 12px;
+
+    color: #718591;
+
+    font-size: 16px;
+}
+
+
+/* =========================================
+   REQUEST CONTAINER
+========================================= */
+
+.request-container {
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1.7fr)
+        minmax(280px, 0.8fr);
+
+    gap: 25px;
+
+    align-items: start;
+}
+
+
+/* =========================================
+   FORM
+========================================= */
+
+.request-form {
+    background: #ffffff;
+
+    border: 1px solid #e1edf2;
+
+    border-radius: 16px;
+
+    padding: 32px;
+}
+
+.form-title {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: flex-start;
+
+    padding-bottom: 25px;
+
+    border-bottom: 1px solid #edf2f5;
+}
+
+.form-title h2 {
+    font-size: 23px;
+
+    color: #123047;
+}
+
+.form-title p {
+    margin-top: 4px;
+
+    color: #8a9ba4;
+
+    font-size: 13px;
+}
+
+.required-note {
+    color: #d45b5b;
+
+    font-size: 12px;
+}
+
+
+/* =========================================
+   FORM SECTIONS
+========================================= */
+
+.form-section {
+    padding: 28px 0;
+
+    border-bottom: 1px solid #edf2f5;
+}
+
+.form-section:last-of-type {
+    border-bottom: none;
+}
+
+.form-section h3 {
+    margin-bottom: 18px;
+
+    color: #123047;
+
+    font-size: 16px;
+}
+
+
+/* =========================================
+   FORM ROW
+========================================= */
+
+.form-row {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 18px;
+}
+
+.form-group {
+    display: flex;
+
+    flex-direction: column;
+
+    margin-bottom: 18px;
+}
+
+.form-group:last-child {
+    margin-bottom: 0;
+}
+
+.form-group label {
+    margin-bottom: 7px;
+
+    color: #526875;
+
+    font-size: 13px;
+
+    font-weight: 700;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+
+    border: 1px solid #d8e6ed;
+
+    border-radius: 9px;
+
+    background: #ffffff;
+
+    color: #123047;
+
+    font-size: 14px;
+
+    outline: none;
+
+    transition: 0.2s;
+}
+
+.form-group input,
+.form-group select {
+    height: 50px;
+
+    padding: 0 15px;
+}
+
+.form-group textarea {
+    padding: 13px 15px;
+
+    resize: vertical;
+
+    min-height: 100px;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #a2b0b7;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #159bd3;
+
+    box-shadow:
+        0 0 0 3px rgba(21, 155, 211, 0.08);
+}
+
+
+/* =========================================
+   REQUEST SUMMARY
+========================================= */
+
+.request-summary {
+    margin-top: 25px;
+
+    padding: 20px;
+
+    background: #eef9fd;
+
+    border: 1px solid #d6eff8;
+
+    border-radius: 10px;
+}
+
+.request-summary div {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 20px;
+}
+
+.request-summary span {
+    color: #526875;
+
+    font-size: 13px;
+}
+
+.request-summary strong {
+    color: #159bd3;
+
+    font-size: 18px;
+}
+
+.request-summary small {
+    display: block;
+
+    margin-top: 7px;
+
+    color: #7d929d;
+
+    font-size: 11px;
+}
+
+
+/* =========================================
+   FORM ACTIONS
+========================================= */
+
+.form-actions {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 15px;
+
+    margin-top: 25px;
+}
+
+.cancel-btn {
+    padding: 13px 18px;
+
+    border: 1px solid #d8e6ed;
+
+    border-radius: 8px;
+
+    background: #ffffff;
+
+    color: #526875;
+
+    text-decoration: none;
+
+    font-size: 13px;
+
+    font-weight: 700;
+}
+
+.cancel-btn:hover {
+    border-color: #159bd3;
+
+    color: #159bd3;
+}
+
+.submit-btn {
+    padding: 14px 22px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #159bd3;
+
+    color: #ffffff;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.submit-btn:hover {
+    background: #0c83b6;
+
+    transform: translateY(-1px);
+}
+
+
+/* =========================================
+   SIDE INFORMATION
+========================================= */
+
+.request-info {
+    position: sticky;
+
+    top: 25px;
+
+    padding: 30px;
+
+    background: #123047;
+
+    border-radius: 16px;
+
+    color: #ffffff;
+}
+
+.info-icon {
+    width: 55px;
+    height: 55px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 18px;
+
+    background: rgba(255, 255, 255, 0.1);
+
+    border-radius: 14px;
+
+    font-size: 26px;
+}
+
+.request-info > h2 {
+    font-size: 24px;
+
+    margin-bottom: 25px;
+}
+
+
+/* =========================================
+   STEPS
+========================================= */
+
+.steps {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 24px;
+}
+
+.step {
+    display: flex;
+
+    gap: 15px;
+
+    align-items: flex-start;
+}
+
+.step > span {
+    width: 34px;
+    height: 34px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid rgba(255, 255, 255, 0.2);
+
+    border-radius: 50%;
+
+    color: #63c9f0;
+
+    font-size: 11px;
+
+    font-weight: 800;
+}
+
+.step h3 {
+    font-size: 14px;
+
+    margin-bottom: 3px;
+}
+
+.step p {
+    color: #aebfc8;
+
+    font-size: 12px;
+
+    line-height: 1.5;
+}
+
+
+/* =========================================
+   HELP BOX
+========================================= */
+
+.help-box {
+    margin-top: 30px;
+
+    padding: 18px;
+
+    background: rgba(255, 255, 255, 0.07);
+
+    border-radius: 10px;
+}
+
+.help-box strong {
+    color: #63c9f0;
+
+    font-size: 13px;
+}
+
+.help-box p {
+    margin-top: 5px;
+
+    color: #b7c7cf;
+
+    font-size: 12px;
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+footer {
+    background: #102d43;
+
+    padding: 30px 7%;
+}
+
+.footer-content {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+footer .logo {
+    color: #ffffff;
+}
+
+footer p {
+    color: #9eb1bc;
+
+    font-size: 13px;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1000px) {
+
+    .navbar {
+        padding: 0 4%;
+    }
+
+    .navbar nav {
+        gap: 15px;
+    }
+
+    .request-page {
+        width: 92%;
+    }
+
+    .request-container {
+        grid-template-columns: 1fr;
+    }
+
+    .request-info {
+        position: static;
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 700px) {
+
+    .navbar {
+        padding: 20px;
+
+        flex-direction: column;
+
+        gap: 18px;
+    }
+
+    .navbar nav {
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+    .nav-buttons {
+        display: none;
+    }
+
+    .request-page {
+        width: 92%;
+
+        padding-top: 40px;
+    }
+
+    .request-header h1 {
+        font-size: 34px;
+    }
+
+    .request-form {
+        padding: 22px;
+    }
+
+    .form-title {
+        flex-direction: column;
+
+        gap: 8px;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+
+    .request-summary div {
+        align-items: flex-start;
+
+        flex-direction: column;
+
+        gap: 5px;
+    }
+
+    .form-actions {
+        align-items: stretch;
+
+        flex-direction: column;
+    }
+
+    .cancel-btn,
+    .submit-btn {
+        width: 100%;
+
+        text-align: center;
+    }
+
+    .request-info {
+        padding: 25px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+
+        gap: 12px;
+
+        text-align: center;
+    }
+
+}

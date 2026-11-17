@@ -1,0 +1,969 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Supplier Dashboard | Buea Water Connect</title>
+
+    <link rel="stylesheet" href="../CSS/supplier-dashboard.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVIGATION ================= -->
+
+    <header class="navbar">
+
+        <a href="index.html" class="logo">
+            💧 Buea<span>Water</span>
+        </a>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="dashboard.html">Water Status</a>
+            <a href="suppliers.html">Suppliers</a>
+            <a href="request-water.html">Request Water</a>
+        </nav>
+
+        <div class="supplier-account">
+
+            <div class="account-avatar">
+                MW
+            </div>
+
+            <div class="account-info">
+                <strong>Mountain Water</strong>
+                <span>Supplier</span>
+            </div>
+
+           <button class="logout-btn" id="logoutBtn">
+             Logout
+           </button>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= MAIN DASHBOARD ================= -->
+
+    <main class="supplier-dashboard">
+
+        <!-- Dashboard Header -->
+
+        <section class="dashboard-heading">
+
+            <div>
+
+                <span class="dashboard-label">
+                    SUPPLIER PORTAL
+                </span>
+
+                <h1>
+                    Welcome back, Mountain Water 👋
+                </h1>
+
+                <p>
+                    Manage your water requests, deliveries
+                    and service areas from your dashboard.
+                </p>
+
+            </div>
+
+          <div class="availability-control">
+
+    <span class="online-dot"></span>
+
+    <span class="availability-text">
+        Currently Available
+    </span>
+
+    <button class="availability-toggle" id="availabilityToggle">
+        ON
+    </button>
+
+</div>
+
+        </section>
+
+
+        <!-- ================= STATISTICS ================= -->
+
+        <section class="stats-grid">
+
+            <article class="stat-card">
+
+                <div class="stat-icon blue">
+                    📦
+                </div>
+
+                <div>
+                    <span class="stat-title">
+                        New Requests
+                    </span>
+
+                    <strong>
+                        8
+                    </strong>
+
+                    <small>
+                        Waiting for response
+                    </small>
+                </div>
+
+            </article>
+
+
+            <article class="stat-card">
+
+                <div class="stat-icon orange">
+                    🚚
+                </div>
+
+                <div>
+                    <span class="stat-title">
+                        Active Deliveries
+                    </span>
+
+                    <strong>
+                        4
+                    </strong>
+
+                    <small>
+                        Currently in progress
+                    </small>
+                </div>
+
+            </article>
+
+
+            <article class="stat-card">
+
+                <div class="stat-icon green">
+                    ✓
+                </div>
+
+                <div>
+                    <span class="stat-title">
+                        Completed
+                    </span>
+
+                    <strong>
+                        6
+                    </strong>
+
+                    <small>
+                        Deliveries this month
+                    </small>
+                </div>
+
+            </article>
+
+
+            <article class="stat-card">
+
+                <div class="stat-icon purple">
+                    💰
+                </div>
+
+                <div>
+                    <span class="stat-title">
+                        Earnings
+                    </span>
+
+                    <strong>
+                        8,000FCFA
+                    </strong>
+
+                    <small>
+                        This month
+                    </small>
+                </div>
+
+            </article>
+
+        </section>
+
+
+        <!-- ================= DASHBOARD CONTENT ================= -->
+
+        <section class="dashboard-content">
+
+
+            <!-- REQUESTS -->
+
+            <div class="requests-section">
+
+                <div class="section-heading">
+
+                    <div>
+
+                        <h2>
+                            Recent Water Requests
+                        </h2>
+
+                        <p>
+                            Manage incoming customer requests.
+                        </p>
+
+                    </div>
+
+                    <button class="view-all-btn">
+                        View All
+                    </button>
+
+                </div>
+
+
+                <!-- Request Table -->
+
+                <div class="request-table-wrapper">
+
+                    <table class="request-table">
+
+                        <thead>
+
+                            <tr>
+
+                                <th>
+                                    Customer
+                                </th>
+
+                                <th>
+                                    Area
+                                </th>
+
+                                <th>
+                                    Quantity
+                                </th>
+
+                                <th>
+                                    Requested
+                                </th>
+
+                                <th>
+                                    Status
+                                </th>
+
+                                <th>
+                                    Action
+                                </th>
+
+                            </tr>
+
+                        </thead>
+
+
+                        <tbody>
+
+                            <tr>
+
+                                <td>
+
+                                    <div class="customer">
+
+                                        <div class="customer-avatar">
+                                            AC
+                                        </div>
+
+                                        <div>
+                                            <strong>
+                                                Aziwin Clinsma
+                                            </strong>
+
+                                            <span>
+                                                677 234 891
+                                            </span>
+                                        </div>
+
+                                    </div>
+
+                                </td>
+
+                                <td>
+                                    Molyko
+                                </td>
+
+                                <td>
+                                    20 L
+                                </td>
+
+                                <td>
+                                    5 min ago
+                                </td>
+
+                                <td>
+                                  <span class="status pending request-status">
+                                      Pending
+                                 </span>
+                                </td>
+
+                                <td>
+
+                                    <div class="action-buttons">
+
+                                        <button class="accept-btn request-accept">
+                                        Accept
+                                    </button>
+
+                                    <button class="reject-btn request-reject">
+                                                Reject
+                                           </button>
+
+                                    </div>
+
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+
+                                    <div class="customer">
+
+                                        <div class="customer-avatar">
+                                            BN
+                                        </div>
+
+                                        <div>
+                                            <strong>
+                                                Beatrice Nole
+                                            </strong>
+
+                                            <span>
+                                                650 123 456
+                                            </span>
+
+                                        </div>
+
+                                    </div>
+
+                                </td>
+
+                                <td>
+                                    Bonduma
+                                </td>
+
+                                <td>
+                                    40 L
+                                </td>
+
+                                <td>
+                                    18 min ago
+                                </td>
+
+                                <td>
+                                    <span class="status accepted">
+                                        Accepted
+                                    </span>
+                                </td>
+
+                                <td>
+
+                                   <button class="details-btn view-details-btn">
+                                      View Details
+                              </button>
+
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+
+                                    <div class="customer">
+
+                                        <div class="customer-avatar">
+                                            NP
+                                        </div>
+
+                                        <div>
+                                            <strong>
+                                                Nchang Precious
+                                            </strong>
+
+                                            <span>
+                                                679 567 234
+                                            </span>
+
+                                        </div>
+
+                                    </div>
+
+                                </td>
+
+                                <td>
+                                    Great Soppo
+                                </td>
+
+                                <td>
+                                    50 L
+                                </td>
+
+                                <td>
+                                    32 min ago
+                                </td>
+
+                                <td>
+                                    <span class="status pending  request-status">
+                                        Pending
+                                    </span>
+
+                                </td>
+
+                                <td>
+
+                                    <div class="action-buttons">
+
+                                      <button class="accept-btn request-accept">
+                                        Accept
+                                    </button>
+
+                                    <button class="reject-btn request-reject">
+                                                Reject
+                                           </button>
+
+                                    </div>
+
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+
+                                    <div class="customer">
+
+                                        <div class="customer-avatar">
+                                            TS
+                                        </div>
+
+                                        <div>
+                                            <strong>
+                                                Tabang Shama
+                                            </strong>
+
+                                            <span>
+                                                690 345 678
+                                            </span>
+
+                                        </div>
+
+                                    </div>
+
+                                </td>
+
+                                <td>
+                                    Muea
+                                </td>
+
+                                <td>
+                                    80 L
+                                </td>
+
+                                <td>
+                                    1 hour ago
+                                </td>
+
+                                <td>
+                                    <span class="status delivered">
+                                        Delivered
+                                    </span>
+
+                                </td>
+
+                                <td>
+
+                                   <button class="details-btn view-details-btn">
+                                    View Details
+                                 </button>
+
+                                </td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </div>
+
+
+            <!-- ================= SIDE PANEL ================= -->
+
+            <aside class="dashboard-sidebar">
+
+
+                <!-- Service Areas -->
+
+                <div class="side-card">
+
+                    <div class="side-card-header">
+
+                        <div>
+
+                            <h2>
+                                Service Areas
+                            </h2>
+
+                            <p>
+                                Areas you currently serve
+                            </p>
+
+                        </div>
+
+                       <button class="edit-btn" id="editAreasBtn">
+                             Edit
+                         </button>
+
+                    </div>
+
+
+                    <div class="area-list">
+
+                        <div class="service-area">
+
+                            <span class="area-status"></span>
+
+                            <span>
+                                Molyko
+                            </span>
+
+                        </div>
+
+                        <div class="service-area">
+
+                            <span class="area-status"></span>
+
+                            <span>
+                                Bonduma
+                            </span>
+
+                        </div>
+
+                        <div class="service-area">
+
+                            <span class="area-status"></span>
+
+                            <span>
+                                Great Soppo
+                            </span>
+
+                        </div>
+
+                        <div class="service-area">
+
+                            <span class="area-status"></span>
+
+                            <span>
+                                Muea
+                            </span>
+
+                        </div>
+
+                        <div class="service-area">
+
+                            <span class="area-status"></span>
+
+                            <span>
+                                Buea Town
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Quick Actions -->
+
+                <div class="side-card">
+
+                    <div class="side-card-header">
+
+                        <div>
+
+                            <h2>
+                                Quick Actions
+                            </h2>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="quick-actions">
+
+                        <button>
+                            💧 Update Water Availability
+                        </button>
+
+                        <button>
+                            📍 Manage Service Areas
+                        </button>
+
+                        <button>
+                            💰 View Earnings
+                        </button>
+
+                        <button>
+                            ⚙️ Supplier Settings
+                        </button>
+
+                         <button id="openChat">
+                                💬 Chat with Customers
+                          </button>
+                    </div>
+
+                </div>
+
+
+                <!-- Performance -->
+
+                <div class="performance-card">
+
+                    <span class="performance-label">
+                        THIS MONTH
+                    </span>
+
+                    <h2>
+                        Great work! 🎉
+                    </h2>
+
+                    <p>
+                        You have completed 8 deliveries
+                        this month.
+                    </p>
+
+                    <div class="progress">
+
+                        <div class="progress-bar"></div>
+
+                    </div>
+
+                    <small>
+                        8 of 15 monthly deliveries
+                    </small>
+
+                </div>
+
+            </aside>
+
+        </section>
+        <section class="earnings-section">
+
+    <div class="section-heading">
+        <div>
+            <span class="section-label">PAYMENT SUMMARY</span>
+            <h2>My Earnings</h2>
+        </div>
+
+        <button class="earnings-btn" id="viewEarnings">
+            View Details
+        </button>
+    </div>
+
+    <div class="earnings-grid">
+
+        <div class="earning-card">
+            <span class="earning-icon">💰</span>
+
+            <div>
+                <span>Total Earnings</span>
+                <strong>12,000 FCFA</strong>
+            </div>
+        </div>
+
+        <div class="earning-card">
+            <span class="earning-icon">🚚</span>
+
+            <div>
+                <span>Completed Deliveries</span>
+                <strong>8</strong>
+            </div>
+        </div>
+
+        <div class="earning-card">
+            <span class="earning-icon">📅</span>
+
+            <div>
+                <span>This Month</span>
+                <strong>24,000 FCFA</strong>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+    </main>
+<!-- ================= REQUEST DETAILS MODAL ================= -->
+
+<div class="request-modal" id="requestModal">
+
+    <div class="modal-content">
+
+        <button class="modal-close" id="closeModal">
+            &times;
+        </button>
+
+        <div class="modal-header">
+
+            <span class="modal-icon">
+                💧
+            </span>
+
+            <div>
+                <span class="modal-label">
+                    WATER REQUEST
+                </span>
+
+                <h2>
+                    Request Details
+                </h2>
+            </div>
+
+        </div>
+
+
+        <div class="request-details">
+
+            <div class="detail-item">
+                <span>Customer</span>
+                <strong id="modalCustomer">
+                    -
+                </strong>
+            </div>
+
+            <div class="detail-item">
+                <span>Phone</span>
+                <strong id="modalPhone">
+                    -
+                </strong>
+            </div>
+
+            <div class="detail-item">
+                <span>Area</span>
+                <strong id="modalArea">
+                    -
+                </strong>
+            </div>
+
+            <div class="detail-item">
+                <span>Quantity</span>
+                <strong id="modalQuantity">
+                    -
+                </strong>
+            </div>
+
+            <div class="detail-item">
+                <span>Requested</span>
+                <strong id="modalTime">
+                    -
+                </strong>
+            </div>
+
+        </div>
+
+
+        <div class="delivery-location">
+
+            <span>
+                📍 Delivery Location
+            </span>
+
+            <p id="modalLocation">
+                -
+            </p>
+
+        </div>
+
+
+        <div class="modal-actions">
+
+            <button class="modal-accept">
+                Accept Request
+            </button>
+
+            <button class="modal-cancel" id="modalCancel">
+                Close
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+<!-- ================= CHAT WINDOW ================= -->
+
+<div class="chat-window" id="chatWindow">
+
+    <div class="chat-header">
+
+        <div class="chat-user">
+
+            <div class="chat-avatar">
+                SD
+            </div>
+
+            <div>
+                <strong>Sena Dairel</strong>
+                <span>● Online</span>
+            </div>
+
+        </div>
+
+        <button class="chat-close" id="closeChat">
+            &times;
+        </button>
+
+    </div>
+
+
+    <div class="chat-messages" id="chatMessages">
+
+        <div class="message customer-message">
+            <p>
+                Hello, I need 80 L of water in Molyko.
+            </p>
+
+            <span>
+                10:42 AM
+            </span>
+        </div>
+
+
+        <div class="message supplier-message">
+            <p>
+                Hello Sena. We can deliver today.
+            </p>
+
+            <span>
+                10:44 AM
+            </span>
+        </div>
+
+
+        <div class="message customer-message">
+            <p>
+                Great. How much will the delivery cost?
+            </p>
+
+            <span>
+                10:45 AM
+            </span>
+        </div>
+
+    </div>
+
+
+    <div class="chat-input-area">
+
+        <input
+            type="text"
+            id="chatInput"
+            placeholder="Type your message..."
+        >
+
+        <button id="sendMessage">
+            ➤
+        </button>
+
+    </div>
+
+</div>
+<!-- ================= SERVICE AREAS MODAL ================= -->
+
+<div class="areas-modal" id="areasModal">
+
+    <div class="areas-modal-content">
+
+        <button class="areas-close" id="closeAreas">
+            &times;
+        </button>
+
+        <h2>Manage Service Areas</h2>
+
+        <p>
+            Select the areas of Buea where you currently
+            provide water delivery.
+        </p>
+
+        <div class="areas-options">
+
+            <label>
+                <input type="checkbox" value="Molyko" checked>
+                Molyko
+            </label>
+
+            <label>
+                <input type="checkbox" value="Bonduma" checked>
+                Bonduma
+            </label>
+
+            <label>
+                <input type="checkbox" value="Great Soppo" checked>
+                Great Soppo
+            </label>
+
+            <label>
+                <input type="checkbox" value="Muea" checked>
+                Muea
+            </label>
+
+            <label>
+                <input type="checkbox" value="Buea Town" checked>
+                Buea Town
+            </label>
+
+            <label>
+                <input type="checkbox" value="Mile 16">
+                Mile 16
+            </label>
+
+        </div>
+
+        <button class="save-areas-btn" id="saveAreas">
+            Save Service Areas
+        </button>
+
+    </div>
+
+</div>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="footer-content">
+
+            <div class="logo">
+                💧 Buea<span>Water</span>
+            </div>
+
+            <p>
+                © 2026 Buea Water Connect.
+                Building a smarter water community.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <script src="../JAVASCRIPT/script.js"></script>
+
+</body>
+
+</html>

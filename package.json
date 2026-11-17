@@ -1,0 +1,14 @@
+{
+  "name": "buea-water-connect",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Static deployment-ready website for Buea Water Connect",
+  "scripts": {
+    "build": "echo 'Static site ready for deployment'",
+    "start": "serve -s HTML -l 3000",
+    "dev": "serve -s HTML -l 3000"
+  },
+  "devDependencies": {
+    "serve": "^14.2.4"
+  }
+}

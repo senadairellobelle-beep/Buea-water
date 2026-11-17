@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Request Water | Buea Water Connect</title>
+
+    <link rel="stylesheet" href="../CSS/request-water.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVIGATION ================= -->
+
+    <header class="navbar">
+
+        <div class="logo">
+            <span class="logo-icon">💧</span>
+            Buea<span>Water</span>
+        </div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="dashboard.html">Water Status</a>
+            <a href="suppliers.html">Suppliers</a>
+            <a href="request-water.html" class="active">Request Water</a>
+        </nav>
+  <div class="nav-buttons">
+
+    <a href="supplier-register.html" class="btn-primary">
+        Get Started
+    </a>
+
+    <a href="supplier-login.html" class="btn-login">
+        Login
+    </a>
+
+</div>
+
+    </header>
+
+
+    <!-- ================= MAIN CONTENT ================= -->
+
+    <main class="request-page">
+
+        <!-- Page Introduction -->
+
+        <section class="request-header">
+
+            <span class="section-label">
+                💧 BUEA WATER CONNECT
+            </span>
+
+            <h1>
+                Request <span>Water Delivery</span>
+            </h1>
+
+            <p>
+                Tell us where you need water and we'll connect
+                you with an available supplier in Buea.
+            </p>
+
+        </section>
+
+
+        <!-- ================= REQUEST FORM ================= -->
+
+        <section class="request-container">
+
+            <form class="request-form" id="waterRequestForm">
+
+                <div class="form-title">
+
+                    <div>
+                        <h2>Water Delivery Request</h2>
+
+                        <p>
+                            Fill in the information below to
+                            submit your request.
+                        </p>
+                    </div>
+
+                    <span class="required-note">
+                        * Required
+                    </span>
+
+                </div>
+
+
+                <!-- Personal Information -->
+
+                <div class="form-section">
+
+                    <h3>Personal Information</h3>
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+
+                            <label for="fullName">
+                                Full Name *
+                            </label>
+
+                            <input
+                                type="text"
+                                id="fullName"
+                                name="fullName"
+                                placeholder="Enter your full name"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="phone">
+                                Phone Number *
+                            </label>
+
+                            <input
+                                type="tel"
+                                id="phone"
+                                name="phone"
+                                placeholder="e.g. 677 123 456"
+                                required
+                            >
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Delivery Information -->
+
+                <div class="form-section">
+
+                    <h3>Delivery Information</h3>
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+
+                            <label for="area">
+                                Buea Area *
+                            </label>
+
+                            <select id="area" name="area" required>
+
+                                <option value="">
+                                    Select your area
+                                </option>
+
+                                <option value="molyko">
+                                    Molyko
+                                </option>
+
+                                <option value="bonduma">
+                                    Bonduma
+                                </option>
+
+                                <option value="great-soppo">
+                                    Great Soppo
+                                </option>
+
+                                <option value="muea">
+                                    Muea
+                                </option>
+
+                                <option value="mile-16">
+                                    Mile 16
+                                </option>
+
+                                <option value="buea-town">
+                                    Buea Town
+                                </option>
+
+                                <option value="other">
+                                    Other
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="quantity">
+                                Water Quantity *
+                            </label>
+
+                            <select
+                                id="quantity"
+                                name="quantity"
+                                required
+                            >
+
+                                <option value="">
+                                    Select quantity
+                                </option>
+
+                                <option value="10">
+                                    10 Litres
+                                </option>
+
+                                <option value="20">
+                                    20 Litres
+                                </option>
+
+                                <option value="40">
+                                    40 Litres
+                                </option>
+
+                                <option value="50">
+                                    50 Litres
+                                </option>
+
+                                <option value="custom">
+                                    Custom Quantity
+                                </option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="address">
+                            Delivery Address *
+                        </label>
+
+                        <input
+                            type="text"
+                            id="address"
+                            name="address"
+                            placeholder="Enter your street, quarter or landmark"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="landmark">
+                            Nearby Landmark
+                        </label>
+
+                        <input
+                            type="text"
+                            id="landmark"
+                            name="landmark"
+                            placeholder="e.g. Near Molyko Park"
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <!-- Supplier Preference -->
+
+                <div class="form-section">
+
+                    <h3>Supplier Preference</h3>
+
+                    <div class="form-group">
+
+                        <label for="supplier">
+                            Choose Supplier
+                        </label>
+
+                        <select id="supplier" name="supplier">
+
+                            <option value="any">
+                                Any Available Supplier
+                            </option>
+
+                            <option value="mountain-water">
+                                Mountain Water Services
+                            </option>
+
+                            <option value="buea-water">
+                                Buea Water Delivery
+                            </option>
+
+                            <option value="aqua-buea">
+                                Aqua Buea Services
+                            </option>
+
+                            <option value="crystal-water">
+                                Crystal Water Buea
+                            </option>
+
+                            <option value="blue-drop">
+                                Blue Drop Water
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Additional Information -->
+
+                <div class="form-section">
+
+                    <h3>Additional Information</h3>
+
+                    <div class="form-group">
+
+                        <label for="instructions">
+                            Delivery Instructions
+                        </label>
+
+                        <textarea
+                            id="instructions"
+                            name="instructions"
+                            rows="4"
+                            placeholder="Add any special instructions for the supplier..."
+                        ></textarea>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Request Summary -->
+
+                <div class="request-summary">
+
+                    <div>
+
+                        <span>Estimated starting price</span>
+
+                        <strong>
+                            From 1,000 FCFA
+                        </strong>
+
+                    </div>
+
+                    <small>
+                        Final price may vary depending
+                        on distance and quantity.
+                    </small>
+
+                </div>
+
+
+                <!-- Submit -->
+
+                <div class="form-actions">
+
+                    <a
+                        href="suppliers.html"
+                        class="cancel-btn"
+                    >
+                        Back to Suppliers
+                    </a>
+
+                    <button
+                        type="submit"
+                        class="submit-btn"
+                    >
+                        🚚 Submit Water Request
+                    </button>
+
+                </div>
+
+            </form>
+
+
+            <!-- ================= SIDE INFORMATION ================= -->
+
+            <aside class="request-info">
+
+                <div class="info-icon">
+                    💧
+                </div>
+
+                <h2>
+                    How it works
+                </h2>
+
+                <div class="steps">
+
+                    <div class="step">
+
+                        <span>01</span>
+
+                        <div>
+                            <h3>Submit Request</h3>
+
+                            <p>
+                                Tell us where you need water
+                                and how much you need.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="step">
+
+                        <span>02</span>
+
+                        <div>
+                            <h3>Supplier Accepts</h3>
+
+                            <p>
+                                An available supplier receives
+                                and accepts your request.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="step">
+
+                        <span>03</span>
+
+                        <div>
+                            <h3>Water Delivered</h3>
+
+                            <p>
+                                The supplier delivers water
+                                directly to your location.
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="help-box">
+
+                    <strong>Need help?</strong>
+
+                    <p>
+                        Contact Buea Water Connect support
+                        if you have questions about your request.
+                    </p>
+
+                </div>
+
+            </aside>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="footer-content">
+
+            <div class="logo">
+                <span class="logo-icon">💧</span>
+                Buea<span>Water</span>
+            </div>
+
+            <p>
+                © 2026 Buea Water Connect.
+                Building a smarter water community.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <script src="../JAVASCRIPT/script.js"></script>
+
+</body>
+
+</html>

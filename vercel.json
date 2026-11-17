@@ -1,0 +1,12 @@
+{
+  "rewrites": [
+    { "source": "/", "destination": "/HTML/index.html" },
+    { "source": "/index.html", "destination": "/HTML/index.html" },
+    { "source": "/dashboard.html", "destination": "/HTML/dashboard.html" },
+    { "source": "/suppliers.html", "destination": "/HTML/suppliers.html" },
+    { "source": "/request-water.html", "destination": "/HTML/request-water.html" },
+    { "source": "/supplier-register.html", "destination": "/HTML/supplier-register.html" },
+    { "source": "/supplier-login.html", "destination": "/HTML/supplier-login.html" },
+    { "source": "/supplier-dashboard.html", "destination": "/HTML/supplier-dashboard.html" }
+  ]
+}

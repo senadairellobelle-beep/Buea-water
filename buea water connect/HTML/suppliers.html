@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Water Suppliers | Buea Water Connect</title>
+
+    <link rel="stylesheet" href="../CSS/suppliers.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVIGATION ================= -->
+
+    <header class="navbar">
+
+        <div class="logo">
+            <span class="logo-icon">💧</span>
+            Buea<span>Water</span>
+        </div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="dashboard.html">Water Status</a>
+            <a href="suppliers.html" class="active">Suppliers</a>
+            <a href="request-water.html">Request Water</a>
+        </nav>
+  <div class="nav-buttons">
+
+    <a href="supplier-register.html" class="btn-primary">
+        Get Started
+    </a>
+
+    <a href="supplier-login.html" class="btn-login">
+        Login
+    </a>
+
+</div>
+
+    </header>
+
+
+    <!-- ================= MAIN CONTENT ================= -->
+
+    <main class="suppliers-page">
+
+        <!-- Page Header -->
+
+        <section class="suppliers-header">
+
+            <div>
+
+                <span class="section-label">
+                    💧 BUEA WATER CONNECT
+                </span>
+
+                <h1>
+                    Find a Water
+                    <span>Supplier</span>
+                </h1>
+
+                <p>
+                    Find available water suppliers in Buea
+                    and request water delivery to your area.
+                </p>
+
+            </div>
+
+            <button class="become-supplier-btn">
+                + Become a Supplier
+            </button>
+
+        </section>
+
+
+        <!-- ================= SEARCH ================= -->
+
+        <section class="supplier-search">
+
+            <div class="search-box">
+
+                <span class="search-icon">⌕</span>
+
+                <input
+                    type="text"
+                    id="supplierSearch"
+                    placeholder="Search supplier or area..."
+                >
+
+            </div>
+
+            <select id="supplierArea">
+
+                <option value="all">
+                    All Areas
+                </option>
+
+                <option value="molyko">
+                    Molyko
+                </option>
+
+                <option value="bonduma">
+                    Bonduma
+                </option>
+
+                <option value="great-soppo">
+                    Great Soppo
+                </option>
+
+                <option value="muea">
+                    Muea
+                </option>
+
+                <option value="mile-16">
+                    Mile 16
+                </option>
+
+                <option value="buea-town">
+                    Buea Town
+                </option>
+
+            </select>
+
+        </section>
+
+
+        <!-- ================= SUPPLIER COUNT ================= -->
+
+        <div class="supplier-info">
+
+            <div>
+                <strong>Available Suppliers</strong>
+                <span>6 suppliers found in Buea</span>
+            </div>
+
+            <div class="availability">
+                <span class="availability-dot"></span>
+                Currently Available
+            </div>
+
+        </div>
+
+
+        <!-- ================= SUPPLIER CARDS ================= -->
+
+        <section class="supplier-grid">
+
+
+            <!-- Supplier 1 -->
+
+            <article class="supplier-card">
+
+                <div class="supplier-top">
+
+                    <div class="supplier-avatar">
+                        MW
+                    </div>
+
+                    <span class="available-badge">
+                        ● Available
+                    </span>
+
+                </div>
+
+
+                <div class="supplier-details">
+
+                    <h2>Mountain Water Services</h2>
+
+                    <p class="supplier-location">
+                        📍 Molyko &nbsp; • &nbsp; Bonduma
+                    </p>
+
+                    <div class="rating">
+                        ⭐ <strong>4.8</strong>
+                        <span>(24 reviews)</span>
+                    </div>
+
+                </div>
+
+
+                <div class="supplier-services">
+
+                    <div>
+                        <span>Delivery</span>
+                        <strong>Available</strong>
+                    </div>
+
+                    <div>
+                        <span>Starting from</span>
+                        <strong>1,000 FCFA</strong>
+                    </div>
+
+                </div>
+
+
+                <button class="request-btn">
+                    Request Water
+                </button>
+
+            </article>
+
+
+            <!-- Supplier 2 -->
+
+            <article class="supplier-card">
+
+                <div class="supplier-top">
+
+                    <div class="supplier-avatar">
+                        BW
+                    </div>
+
+                    <span class="available-badge">
+                        ● Available
+                    </span>
+
+                </div>
+
+
+                <div class="supplier-details">
+
+                    <h2>Buea Water Delivery</h2>
+
+                    <p class="supplier-location">
+                        📍 Great Soppo &nbsp; • &nbsp; Muea
+                    </p>
+
+                    <div class="rating">
+                        ⭐ <strong>4.7</strong>
+                        <span>(19 reviews)</span>
+                    </div>
+
+                </div>
+
+
+                <div class="supplier-services">
+
+                    <div>
+                        <span>Delivery</span>
+                        <strong>Available</strong>
+                    </div>
+
+                    <div>
+                        <span>Starting from</span>
+                        <strong>1,500 FCFA</strong>
+                    </div>
+
+                </div>
+
+
+                <button class="request-btn">
+                    Request Water
+                </button>
+
+            </article>
+
+
+            <!-- Supplier 3 -->
+
+            <article class="supplier-card">
+
+                <div class="supplier-top">
+
+                    <div class="supplier-avatar">
+                        AW
+                    </div>
+
+                    <span class="available-badge">
+                        ● Available
+                    </span>
+
+                </div>
+
+
+                <div class="supplier-details">
+
+                    <h2>Aqua Buea Services</h2>
+
+                    <p class="supplier-location">
+                        📍 Buea Town &nbsp; • &nbsp; Muea
+                    </p>
+
+                    <div class="rating">
+                        ⭐ <strong>4.9</strong>
+                        <span>(31 reviews)</span>
+                    </div>
+
+                </div>
+
+
+                <div class="supplier-services">
+
+                    <div>
+                        <span>Delivery</span>
+                        <strong>Available</strong>
+                    </div>
+
+                    <div>
+                        <span>Starting from</span>
+                        <strong>1,000 FCFA</strong>
+                    </div>
+
+                </div>
+
+
+                <button class="request-btn">
+                    Request Water
+                </button>
+
+            </article>
+
+
+            <!-- Supplier 4 -->
+
+            <article class="supplier-card">
+
+                <div class="supplier-top">
+
+                    <div class="supplier-avatar">
+                        SW
+                    </div>
+
+                    <span class="busy-badge">
+                        ● Busy
+                    </span>
+
+                </div>
+
+
+                <div class="supplier-details">
+
+                    <h2>Sunrise Water Supply</h2>
+
+                    <p class="supplier-location">
+                        📍 Mile 16 &nbsp; • &nbsp; Muea
+                    </p>
+
+                    <div class="rating">
+                        ⭐ <strong>4.6</strong>
+                        <span>(15 reviews)</span>
+                    </div>
+
+                </div>
+
+
+                <div class="supplier-services">
+
+                    <div>
+                        <span>Delivery</span>
+                        <strong>Currently Busy</strong>
+                    </div>
+
+                    <div>
+                        <span>Starting from</span>
+                        <strong>2,000 FCFA</strong>
+                    </div>
+
+                </div>
+
+
+                <button class="request-btn disabled" disabled>
+                    Currently Busy
+                </button>
+
+            </article>
+
+
+            <!-- Supplier 5 -->
+
+            <article class="supplier-card">
+
+                <div class="supplier-top">
+
+                    <div class="supplier-avatar">
+                        CW
+                    </div>
+
+                    <span class="available-badge">
+                        ● Available
+                    </span>
+
+                </div>
+
+
+                <div class="supplier-details">
+
+                    <h2>Crystal Water Buea</h2>
+
+                    <p class="supplier-location">
+                        📍 Bonduma &nbsp; • &nbsp; Molyko
+                    </p>
+
+                    <div class="rating">
+                        ⭐ <strong>4.5</strong>
+                        <span>(12 reviews)</span>
+                    </div>
+
+                </div>
+
+
+                <div class="supplier-services">
+
+                    <div>
+                        <span>Delivery</span>
+                        <strong>Available</strong>
+                    </div>
+
+                    <div>
+                        <span>Starting from</span>
+                        <strong>1,800 FCFA</strong>
+                    </div>
+
+                </div>
+
+
+                <button class="request-btn">
+                    Request Water
+                </button>
+
+            </article>
+
+
+            <!-- Supplier 6 -->
+
+            <article class="supplier-card">
+
+                <div class="supplier-top">
+
+                    <div class="supplier-avatar">
+                        BW
+                    </div>
+
+                    <span class="available-badge">
+                        ● Available
+                    </span>
+
+                </div>
+
+
+                <div class="supplier-details">
+
+                    <h2>Blue Drop Water</h2>
+
+                    <p class="supplier-location">
+                        📍 Great Soppo &nbsp; • &nbsp; Buea Town
+                    </p>
+
+                    <div class="rating">
+                        ⭐ <strong>4.8</strong>
+                        <span>(21 reviews)</span>
+                    </div>
+
+                </div>
+
+
+                <div class="supplier-services">
+
+                    <div>
+                        <span>Delivery</span>
+                        <strong>Available</strong>
+                    </div>
+
+                    <div>
+                        <span>Starting from</span>
+                        <strong>1,000 FCFA</strong>
+                    </div>
+
+                </div>
+
+
+                <button class="request-btn">
+                    Request Water
+                </button>
+
+            </article>
+
+
+        </section>
+
+
+        <!-- ================= SUPPLIER CTA ================= -->
+
+        <section class="supplier-cta">
+
+            <div class="cta-icon">
+                🚚
+            </div>
+
+            <div class="cta-content">
+
+                <span class="section-label">
+                    FOR WATER SUPPLIERS
+                </span>
+
+                <h2>
+                    Do you supply water in Buea?
+                </h2>
+
+                <p>
+                    Register your water supply service and
+                    connect with residents who need water.
+                </p>
+
+            </div>
+
+            <button class="cta-button">
+                Register as Supplier
+            </button>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="footer-content">
+
+            <div class="logo">
+                <span class="logo-icon">💧</span>
+                Buea<span>Water</span>
+            </div>
+
+            <p>
+                © 2026 Buea Water Connect.
+                Building a smarter water community.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <script src="../JAVASCRIPT/script.js"></script>
+
+</body>
+
+</html>

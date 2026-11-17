@@ -1,0 +1,1006 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #123047;
+    background: #f7fbfd;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* NAVBAR */
+
+.navbar {
+    height: 75px;
+    padding: 0 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    border-bottom: 1px solid #e5eef2;
+}
+
+.logo {
+    font-size: 23px;
+    font-weight: 800;
+}
+
+.logo span {
+    color: #1595d0;
+}
+
+nav {
+    display: flex;
+    gap: 28px;
+}
+
+nav a {
+    color: #526875;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+nav a:hover {
+    color: #1595d0;
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+button,
+.btn-primary,
+.btn-outline,
+.btn-white {
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background: #1595d0;
+    color: white;
+    border: none;
+}
+
+.btn-primary:hover {
+    background: #087bb3;
+}
+
+.btn-login {
+    background: transparent;
+    border: none;
+    color: #526875;
+}
+
+.btn-outline {
+    border: 1px solid #1595d0;
+    color: #1595d0;
+    background: white;
+}
+/* =========================================
+   BUEA WATER CONNECT
+   WATER STATUS DASHBOARD
+========================================= */
+
+
+/* =========================================
+   GENERAL
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4faff;
+    color: #123047;
+    line-height: 1.6;
+}
+
+button,
+input,
+select {
+    font-family: inherit;
+}
+
+
+/* =========================================
+   NAVIGATION
+========================================= */
+
+.navbar {
+    height: 80px;
+    padding: 0 7%;
+    background: #ffffff;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    border-bottom: 1px solid #e5eef3;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: 800;
+    color: #123047;
+}
+
+.logo span:last-child {
+    color: #159bd3;
+}
+
+.logo-icon {
+    font-size: 24px;
+}
+
+.navbar nav {
+    display: flex;
+    gap: 32px;
+}
+
+.navbar nav a {
+    text-decoration: none;
+    color: #526875;
+    font-size: 15px;
+    font-weight: 600;
+
+    transition: 0.2s;
+}
+
+.navbar nav a:hover,
+.navbar nav a.active {
+    color: #159bd3;
+}
+
+.nav-buttons {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.btn-login {
+    border: none;
+    background: transparent;
+    color: #123047;
+
+    padding: 12px 18px;
+
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn-primary {
+    border: none;
+    background: #159bd3;
+    color: #ffffff;
+
+    padding: 13px 22px;
+
+    border-radius: 8px;
+
+    font-weight: 700;
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.btn-primary:hover {
+    background: #0c83b6;
+}
+
+
+/* =========================================
+   MAIN DASHBOARD
+========================================= */
+
+.dashboard {
+    width: 86%;
+    max-width: 1250px;
+
+    margin: 0 auto;
+
+    padding: 65px 0 80px;
+}
+
+
+/* =========================================
+   DASHBOARD HEADER
+========================================= */
+
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    margin-bottom: 35px;
+}
+
+.section-label {
+    display: inline-block;
+
+    color: #159bd3;
+
+    font-size: 12px;
+    font-weight: 800;
+
+    letter-spacing: 1.5px;
+
+    margin-bottom: 8px;
+}
+
+.heading-content h1 {
+    font-size: 42px;
+    line-height: 1.15;
+
+    color: #123047;
+}
+
+.heading-content h1 span {
+    color: #159bd3;
+}
+
+.heading-content p {
+    margin-top: 12px;
+
+    color: #718591;
+
+    font-size: 16px;
+}
+
+.live-status {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    padding: 10px 16px;
+
+    background: #e8f9f1;
+
+    border-radius: 30px;
+
+    color: #15945e;
+
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.live-dot {
+    width: 9px;
+    height: 9px;
+
+    background: #18ad69;
+
+    border-radius: 50%;
+}
+
+
+/* =========================================
+   SEARCH
+========================================= */
+
+.search-section {
+    display: flex;
+    gap: 12px;
+
+    margin-bottom: 30px;
+}
+
+.search-box {
+    position: relative;
+
+    flex: 1;
+}
+
+.search-box input {
+    width: 100%;
+    height: 54px;
+
+    padding: 0 20px 0 50px;
+
+    border: 1px solid #d8e6ed;
+    border-radius: 10px;
+
+    background: #ffffff;
+
+    color: #123047;
+    font-size: 15px;
+
+    outline: none;
+
+    transition: 0.2s;
+}
+
+.search-box input:focus {
+    border-color: #159bd3;
+
+    box-shadow: 0 0 0 3px rgba(21, 155, 211, 0.08);
+}
+
+.search-icon {
+    position: absolute;
+
+    left: 18px;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    font-size: 23px;
+
+    color: #7f949f;
+}
+
+.filter-btn {
+    height: 54px;
+
+    min-width: 190px;
+
+    padding: 0 18px;
+
+    border: 1px solid #d8e6ed;
+    border-radius: 10px;
+
+    background: #ffffff;
+
+    color: #526875;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    outline: none;
+}
+
+.filter-btn:focus {
+    border-color: #159bd3;
+}
+
+
+/* =========================================
+   AREA GRID
+========================================= */
+
+.area-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+
+    gap: 22px;
+}
+
+
+/* =========================================
+   AREA CARD
+========================================= */
+
+.area-card {
+    background: #ffffff;
+
+    border: 1px solid #e1edf2;
+
+    border-radius: 16px;
+
+    padding: 25px;
+
+    min-height: 225px;
+
+    display: flex;
+    flex-direction: column;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        border-color 0.2s ease;
+}
+
+.area-card:hover {
+    transform: translateY(-4px);
+
+    border-color: #c9e5f1;
+
+    box-shadow: 0 14px 35px rgba(20, 88, 120, 0.10);
+}
+
+
+/* =========================================
+   AREA CARD TOP
+========================================= */
+
+.area-top {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.area-number {
+    color: #94a6af;
+
+    font-size: 11px;
+    font-weight: 800;
+
+    letter-spacing: 1px;
+}
+
+.area-card h2 {
+    margin-top: 5px;
+
+    font-size: 23px;
+
+    color: #123047;
+}
+
+.updated {
+    display: block;
+
+    margin-top: 3px;
+
+    color: #8a9ba4;
+
+    font-size: 13px;
+}
+
+
+/* =========================================
+   AREA ICON
+========================================= */
+
+.area-icon {
+    width: 52px;
+    height: 52px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 14px;
+
+    font-size: 25px;
+}
+
+.available-icon {
+    background: #e4f7ff;
+}
+
+.unavailable-icon {
+    background: #fff0f0;
+}
+
+.irregular-icon {
+    background: #fff7df;
+}
+
+
+/* =========================================
+   WATER STATUS
+========================================= */
+
+.status {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    margin-top: 25px;
+
+    font-size: 16px;
+    font-weight: 800;
+}
+
+.available-status {
+    color: #15945e;
+}
+
+.unavailable-status {
+    color: #d94b4b;
+}
+
+.irregular-status {
+    color: #c18a13;
+}
+
+.status-dot {
+    width: 10px;
+    height: 10px;
+
+    display: inline-block;
+
+    border-radius: 50%;
+}
+
+.green {
+    background: #18ad69;
+}
+
+.red {
+    background: #e65353;
+}
+
+.yellow {
+    background: #e7ad20;
+}
+
+
+/* =========================================
+   CARD FOOTER
+========================================= */
+
+.area-card-footer {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    margin-top: auto;
+    padding-top: 18px;
+
+    border-top: 1px solid #edf2f5;
+
+    color: #7a8e99;
+
+    font-size: 13px;
+}
+
+.report-link {
+    border: none;
+
+    background: transparent;
+
+    color: #159bd3;
+
+    font-size: 13px;
+    font-weight: 800;
+
+    cursor: pointer;
+}
+
+.report-link:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================================
+   MAP
+========================================= */
+
+.map-section {
+    margin-top: 50px;
+
+    padding: 30px;
+
+    background: #ffffff;
+
+    border: 1px solid #e1edf2;
+
+    border-radius: 16px;
+}
+
+.map-header {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.map-header h2 {
+    font-size: 28px;
+
+    color: #123047;
+}
+
+.map-header p {
+    color: #7a8e99;
+
+    margin-top: 4px;
+}
+
+.map-button {
+    border: 1px solid #159bd3;
+
+    background: #ffffff;
+
+    color: #159bd3;
+
+    padding: 11px 18px;
+
+    border-radius: 8px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+}
+
+.map-button:hover {
+    background: #159bd3;
+
+    color: #ffffff;
+}
+
+.map-placeholder {
+    height: 280px;
+
+    margin-top: 25px;
+
+    border-radius: 12px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #dff5ff,
+            #eefaff
+        );
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+}
+
+.map-content {
+    max-width: 430px;
+
+    padding: 30px;
+}
+
+.map-icon {
+    font-size: 42px;
+
+    margin-bottom: 10px;
+}
+
+.map-content h3 {
+    color: #123047;
+
+    font-size: 21px;
+}
+
+.map-content p {
+    margin-top: 7px;
+
+    color: #718591;
+
+    font-size: 14px;
+}
+/* =========================================
+   BUEA WATER MAP
+========================================= */
+
+#waterMap {
+    width: 100%;
+    height: 500px;
+    border-radius: 18px;
+    overflow: hidden;
+    margin-top: 25px;
+    border: 1px solid #e5e5e5;
+}
+/* =========================================
+   WATER MAP MARKERS
+========================================= */
+
+.map-marker {
+    width: 40px;
+    height: 40px;
+    border-radius: 50% 50% 50% 0;
+    transform: rotate(-45deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    border: 3px solid white;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.25);
+}
+
+.map-marker::first-letter {
+    transform: rotate(45deg);
+}
+
+.map-marker.green {
+    background: #2ab673;
+}
+
+.map-marker.orange {
+    background: #f0b429;
+}
+
+.map-marker.red {
+    background: #dc3545;
+}
+/* =========================================
+   WATER STATUS REPORT MODAL
+========================================= */
+
+.report-modal {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    z-index: 1000;
+}
+
+.report-modal.active {
+    display: flex;
+}
+
+.report-modal-content {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    background: #ffffff;
+    border-radius: 18px;
+    padding: 32px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+}
+
+.close-report {
+    position: absolute;
+    top: 15px;
+    right: 18px;
+    border: none;
+    background: transparent;
+    font-size: 28px;
+    cursor: pointer;
+    color: #666;
+}
+
+.close-report:hover {
+    color: #111;
+}
+
+.report-icon {
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #eaf7f7;
+    border-radius: 50%;
+    font-size: 27px;
+    margin-bottom: 18px;
+}
+
+.report-modal-content h2 {
+    margin: 0 0 8px;
+    font-size: 25px;
+}
+
+.report-modal-content > p {
+    margin: 0 0 24px;
+    color: #666;
+    line-height: 1.6;
+}
+
+.report-area {
+    background: #f5f7f8;
+    padding: 14px 16px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.report-area label {
+    display: block;
+    font-size: 13px;
+    color: #777;
+    margin-bottom: 5px;
+}
+
+.report-area strong {
+    font-size: 17px;
+}
+
+.report-options {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.report-option {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 15px;
+    border: 2px solid #e5e5e5;
+    border-radius: 12px;
+    background: #ffffff;
+    cursor: pointer;
+    text-align: left;
+    font-size: 22px;
+    transition: 0.2s ease;
+}
+
+.report-option:hover {
+    border-color: #aaa;
+    transform: translateY(-1px);
+}
+
+.report-option.selected {
+    border-color: #333;
+    background: #f7f7f7;
+}
+
+.report-option span {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.report-option strong {
+    font-size: 15px;
+}
+
+.report-option small {
+    font-size: 13px;
+    color: #777;
+}
+
+.submit-report {
+    width: 100%;
+    margin-top: 22px;
+    padding: 14px;
+    border: none;
+    border-radius: 10px;
+    background: #167c80;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.submit-report:hover {
+    background: #12666a;
+}
+
+.submit-report:disabled {
+    background: #cccccc;
+    cursor: not-allowed;
+}
+
+/* =========================================
+   FOOTER
+========================================= */
+
+footer {
+    background: #102d43;
+
+    padding: 30px 7%;
+}
+
+.footer-content {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .logo {
+    color: #ffffff;
+}
+
+footer p {
+    color: #9eb1bc;
+
+    font-size: 13px;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1000px) {
+
+    .navbar {
+        padding: 0 4%;
+    }
+
+    .navbar nav {
+        gap: 15px;
+    }
+
+    .dashboard {
+        width: 92%;
+    }
+
+    .area-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 700px) {
+
+    .navbar {
+        height: auto;
+
+        padding: 20px;
+
+        flex-direction: column;
+
+        gap: 18px;
+    }
+
+    .navbar nav {
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+    .nav-buttons {
+        display: none;
+    }
+
+    .dashboard {
+        width: 92%;
+
+        padding-top: 40px;
+    }
+
+    .dashboard-header {
+        align-items: flex-start;
+
+        flex-direction: column;
+
+        gap: 20px;
+    }
+
+    .heading-content h1 {
+        font-size: 34px;
+    }
+
+    .search-section {
+        flex-direction: column;
+    }
+
+    .filter-btn {
+        width: 100%;
+    }
+
+    .area-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .map-header {
+        align-items: flex-start;
+
+        flex-direction: column;
+
+        gap: 18px;
+    }
+
+    .map-button {
+        width: 100%;
+    }
+
+    .footer-content {
+        flex-direction: column;
+
+        gap: 12px;
+
+        text-align: center;
+    }
+
+}

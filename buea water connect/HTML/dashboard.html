@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Water Status | Buea Water Connect</title>
+
+    <link rel="stylesheet" href="../CSS/dashboard.css">
+    <!-- Leaflet Map -->
+<link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+/>
+</head>
+
+<body>
+
+    <!-- ================= NAVIGATION ================= -->
+
+    <header class="navbar">
+
+        <div class="logo">
+            <span class="logo-icon">💧</span>
+            Buea<span>Water</span>
+        </div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="dashboard.html" class="active">Water Status</a>
+            <a href="suppliers.html">Suppliers</a>
+            <a href="request-water.html">Request Water</a>
+        </nav>
+
+      <div class="nav-buttons">
+
+    <a href="supplier-register.html" class="btn-primary">
+        Get Started
+    </a>
+
+    <a href="supplier-login.html" class="btn-login">
+        Login
+    </a>
+
+</div>
+
+    </header>
+
+
+    <!-- ================= MAIN DASHBOARD ================= -->
+
+    <main class="dashboard">
+
+        <!-- Dashboard heading -->
+
+        <section class="dashboard-header">
+
+            <div class="heading-content">
+
+                <span class="section-label">
+                    💧 BUEA WATER CONNECT
+                </span>
+
+                <h1>
+                    Water Availability
+                    <span>in Buea</span>
+                </h1>
+
+                <p>
+                    Check the latest reported water status
+                    across different areas of Buea.
+                </p>
+
+            </div>
+
+            <div class="live-status">
+                <span class="live-dot"></span>
+                LIVE STATUS
+            </div>
+
+        </section>
+
+
+        <!-- ================= SEARCH ================= -->
+
+        <section class="search-section">
+
+            <div class="search-box">
+
+                <span class="search-icon">⌕</span>
+
+                <input
+                    type="text"
+                    id="areaSearch"
+                    placeholder="Search for an area in Buea..."
+                >
+
+            </div>
+
+
+            <select id="statusFilter" class="filter-btn">
+
+                <option value="all">
+                    All Status
+                </option>
+
+                <option value="available">
+                    Water Available
+                </option>
+
+                <option value="irregular">
+                    Irregular
+                </option>
+
+                <option value="unavailable">
+                    No Water
+                </option>
+
+            </select>
+
+        </section>
+
+
+        <!-- ================= AREA CARDS ================= -->
+
+        <section class="area-grid" id="areaGrid">
+
+
+            <!-- Molyko -->
+
+            <article
+                class="area-card"
+                data-area="Molyko"
+                data-status="available"
+            >
+
+                <div class="area-top">
+
+                    <div>
+                        <span class="area-number">
+                            AREA 01
+                        </span>
+
+                        <h2>Molyko</h2>
+
+                        <p class="updated">
+                            Updated 5 minutes ago
+                        </p>
+                    </div>
+
+                    <div class="area-icon available-icon">
+                        💧
+                    </div>
+
+                </div>
+
+                <div class="status available-status">
+
+                    <span class="status-dot green"></span>
+
+                    <span>
+                        Water Available
+                    </span>
+
+                </div>
+
+                <div class="area-card-footer">
+
+                    <span>
+                        👥 0 community reports
+                    </span>
+
+                    <button class="report-link">
+                        Report Status
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <!-- Bonduma -->
+
+            <article
+                class="area-card"
+                data-area="Bonduma"
+                data-status="unavailable"
+            >
+
+                <div class="area-top">
+
+                    <div>
+                        <span class="area-number">
+                            AREA 02
+                        </span>
+
+                        <h2>Bonduma</h2>
+
+                        <p class="updated">
+                            Updated 12 minutes ago
+                        </p>
+                    </div>
+
+                    <div class="area-icon unavailable-icon">
+                        🚰
+                    </div>
+
+                </div>
+
+                <div class="status unavailable-status">
+
+                    <span class="status-dot red"></span>
+
+                    <span>
+                        No Water
+                    </span>
+
+                </div>
+
+                <div class="area-card-footer">
+
+                    <span>
+                        👥 0 community reports
+                    </span>
+
+                    <button class="report-link">
+                        Report Status
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <!-- Great Soppo -->
+
+            <article
+                class="area-card"
+                data-area="Great Soppo"
+                data-status="irregular"
+            >
+
+                <div class="area-top">
+
+                    <div>
+                        <span class="area-number">
+                            AREA 03
+                        </span>
+
+                        <h2>Great Soppo</h2>
+
+                        <p class="updated">
+                            Updated 8 minutes ago
+                        </p>
+                    </div>
+
+                    <div class="area-icon irregular-icon">
+                        💦
+                    </div>
+
+                </div>
+
+                <div class="status irregular-status">
+
+                    <span class="status-dot yellow"></span>
+
+                    <span>
+                        Irregular
+                    </span>
+
+                </div>
+
+                <div class="area-card-footer">
+
+                    <span>
+                        👥 0 community reports
+                    </span>
+
+                    <button class="report-link">
+                        Report Status
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <!-- Muea -->
+
+            <article
+                class="area-card"
+                data-area="Muea"
+                data-status="available"
+            >
+
+                <div class="area-top">
+
+                    <div>
+                        <span class="area-number">
+                            AREA 04
+                        </span>
+
+                        <h2>Muea</h2>
+
+                        <p class="updated">
+                            Updated 3 minutes ago
+                        </p>
+                    </div>
+
+                    <div class="area-icon available-icon">
+                        💧
+                    </div>
+
+                </div>
+
+                <div class="status available-status">
+
+                    <span class="status-dot green"></span>
+
+                    <span>
+                        Water Available
+                    </span>
+
+                </div>
+
+                <div class="area-card-footer">
+
+                    <span>
+                        👥 0  community reports
+                    </span>
+
+                    <button class="report-link">
+                        Report Status
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <!-- Mile 16 -->
+
+            <article
+                class="area-card"
+                data-area="Mile 16"
+                data-status="irregular"
+            >
+
+                <div class="area-top">
+
+                    <div>
+                        <span class="area-number">
+                            AREA 05
+                        </span>
+
+                        <h2>Mile 16</h2>
+
+                        <p class="updated">
+                            Updated 15 minutes ago
+                        </p>
+                    </div>
+
+                    <div class="area-icon irregular-icon">
+                        🚰
+                    </div>
+
+                </div>
+
+                <div class="status irregular-status">
+
+                    <span class="status-dot yellow"></span>
+
+                    <span>
+                        Irregular
+                    </span>
+
+                </div>
+
+                <div class="area-card-footer">
+
+                    <span>
+                        👥 0 community reports
+                    </span>
+
+                    <button class="report-link">
+                        Report Status
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <!-- Buea Town -->
+
+            <article
+                class="area-card"
+                data-area="Buea Town"
+                data-status="available"
+            >
+
+                <div class="area-top">
+
+                    <div>
+                        <span class="area-number">
+                            AREA 06
+                        </span>
+
+                        <h2>Buea Town</h2>
+
+                        <p class="updated">
+                            Updated 7 minutes ago
+                        </p>
+                    </div>
+
+                    <div class="area-icon available-icon">
+                        💧
+                    </div>
+
+                </div>
+
+                <div class="status available-status">
+
+                    <span class="status-dot green"></span>
+
+                    <span>
+                        Water Available
+                    </span>
+
+                </div>
+
+                <div class="area-card-footer">
+
+                    <span>
+                        👥 0 community reports
+                    </span>
+
+                    <button class="report-link">
+                        Report Status
+                    </button>
+
+                </div>
+
+            </article>
+
+
+        </section>
+
+
+        <!-- ================= MAP ================= -->
+
+        <section class="map-section">
+<div id="waterMap"></div>
+
+        </section>
+
+    </main>
+<!-- ================= REPORT STATUS MODAL ================= -->
+
+<div class="report-modal" id="reportModal">
+
+    <div class="report-modal-content">
+
+        <button class="close-report" id="closeReport">
+            ×
+        </button>
+
+        <div class="report-icon">
+            💧
+        </div>
+
+        <h2>Report Water Status</h2>
+
+        <p>
+            Help us keep water information in Buea up to date.
+        </p>
+
+        <div class="report-area">
+            <label>Area</label>
+            <strong id="reportArea">Molyko</strong>
+        </div>
+
+        <div class="report-options">
+
+            <button
+                type="button"
+                class="report-option available-option"
+                data-status="available"
+            >
+                🟢
+                <span>
+                    <strong>Water Available</strong>
+                    <small>Water is currently flowing</small>
+                </span>
+            </button>
+
+            <button
+                type="button"
+                class="report-option irregular-option"
+                data-status="irregular"
+            >
+                🟡
+                <span>
+                    <strong>Irregular</strong>
+                    <small>Water comes and goes</small>
+                </span>
+            </button>
+
+            <button
+                type="button"
+                class="report-option unavailable-option"
+                data-status="unavailable"
+            >
+                🔴
+                <span>
+                    <strong>No Water</strong>
+                    <small>No water is currently available</small>
+                </span>
+            </button>
+
+        </div>
+
+        <button
+            type="button"
+            class="submit-report"
+            id="submitReport"
+            disabled
+        >
+            Submit Report
+        </button>
+
+    </div>
+
+</div>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="footer-content">
+
+            <div class="logo">
+                <span class="logo-icon">💧</span>
+                Buea<span>Water</span>
+            </div>
+
+            <p>
+                © 2026 Buea Water Connect.
+                Building a smarter water community.
+            </p>
+
+        </div>
+
+    </footer>
+
+<script
+    src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js">
+</script>
+    <script src="../JAVASCRIPT/script.js"></script>
+
+</body>
+
+</html>

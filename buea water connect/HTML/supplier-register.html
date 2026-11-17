@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Become a Supplier | Buea Water Connect</title>
+
+    <link rel="stylesheet" href="../CSS/supplier-register.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header class="navbar">
+
+        <a href="index.html" class="logo">
+            💧 Buea<span>Water</span>
+        </a>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="dashboard.html">Water Status</a>
+            <a href="suppliers.html">Suppliers</a>
+            <a href="request-water.html">Request Water</a>
+        </nav>
+     <div class="nav-buttons">
+
+    <a href="supplier-register.html" class="btn-primary">
+        Get Started
+    </a>
+
+    <a href="supplier-login.html" class="btn-login">
+        Login
+    </a>
+
+</div>
+
+        
+
+    </header>
+
+
+    <!-- Registration Section -->
+    <main class="register-page">
+
+        <section class="register-container">
+
+            <!-- Introduction -->
+            <div class="register-intro">
+
+                <span class="register-label">
+                    BECOME A WATER SUPPLIER
+                </span>
+
+                <h1>
+                    Help Buea get
+                    <span>water.</span>
+                </h1>
+
+                <p>
+                    Join Buea Water Connect and provide reliable
+                    water delivery services to residents across Buea.
+                </p>
+
+
+                <div class="supplier-features">
+
+                    <div class="feature">
+
+                        <div class="feature-icon">
+                            📍
+                        </div>
+
+                        <div>
+                            <h3>Choose your service areas</h3>
+
+                            <p>
+                                Select the areas in Buea where you
+                                provide water delivery.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="feature">
+
+                        <div class="feature-icon">
+                            📦
+                        </div>
+
+                        <div>
+                            <h3>Receive water requests</h3>
+
+                            <p>
+                                Customers can find you and request
+                                water delivery.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="feature">
+
+                        <div class="feature-icon">
+                            💰
+                        </div>
+
+                        <div>
+                            <h3>Earn from deliveries</h3>
+
+                            <p>
+                                Get paid for the water deliveries
+                                you complete.
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Registration Form -->
+            <div class="register-card">
+
+                <div class="register-card-header">
+
+                    <div class="register-icon">
+                        🚚
+                    </div>
+
+                    <div>
+                        <h2>Create Supplier Account</h2>
+
+                        <p>
+                            Fill in your information to get started.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                 <form id="supplierRegistrationForm">
+
+                    <!-- Full Name -->
+                    <div class="form-group">
+
+                        <label for="fullName">
+                            Full Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="fullName"
+                            name="fullName"
+                            placeholder="Enter your full name"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- Business Name -->
+                    <div class="form-group">
+
+                        <label for="businessName">
+                            Business / Supplier Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="businessName"
+                            name="businessName"
+                            placeholder="Enter supplier or business name"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- Phone -->
+                    <div class="form-group">
+
+                        <label for="phone">
+                            Phone Number
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="phone"
+                            name="phone"
+                            placeholder="e.g. 6XX XXX XXX"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- Email -->
+                    <div class="form-group">
+
+                        <label for="email">
+                            Email Address
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="Enter your email address"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- Service Area -->
+                    <div class="form-group">
+
+                        <label for="serviceArea">
+                            Main Service Area
+                        </label>
+
+                        <select
+                            id="serviceArea"
+                            name="serviceArea"
+                            required
+                        >
+
+                            <option value="">
+                                Select an area
+                            </option>
+
+                            <option value="Molyko">
+                                Molyko
+                            </option>
+
+                            <option value="Bonduma">
+                                Bonduma
+                            </option>
+
+                            <option value="Great Soppo">
+                                Great Soppo
+                            </option>
+
+                            <option value="Muea">
+                                Muea
+                            </option>
+
+                            <option value="Mile 16">
+                                Mile 16
+                            </option>
+
+                            <option value="Buea Town">
+                                Buea Town
+                            </option>
+
+                            <option value="Other">
+                                Other Buea Area
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- Password -->
+                    <div class="form-row">
+
+                        <div class="form-group">
+
+                            <label for="password">
+                                Password
+                            </label>
+
+                            <input
+                                type="password"
+                                id="password"
+                                name="password"
+                                placeholder="Create password"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="confirmPassword">
+                                Confirm Password
+                            </label>
+
+                            <input
+                                type="password"
+                                id="confirmPassword"
+                                name="confirmPassword"
+                                placeholder="Confirm password"
+                                required
+                            >
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Agreement -->
+                    <label class="agreement">
+
+                        <input
+                            type="checkbox"
+                            id="terms"
+                            required
+                        >
+
+                        <span>
+                            I agree to provide accurate information
+                            and follow the Buea Water Connect supplier
+                            guidelines.
+                        </span>
+
+                    </label>
+
+
+                    <!-- Submit -->
+                    <button
+                        type="submit"
+                        class="register-button"
+                    >
+                        Create Supplier Account
+                    </button>
+
+                </form>
+
+
+                <div class="login-link">
+
+                    <p>
+                        Already have a supplier account?
+                    </p>
+
+                    <a href="supplier-login.html">
+                        Login to your account →
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <div class="footer-content">
+
+            <div class="logo">
+                💧 Buea<span>Water</span>
+            </div>
+
+            <p>
+                © 2026 Buea Water Connect.
+                Building a smarter water community.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <script src="../JAVASCRIPT/script.js"></script>
+
+</body>
+
+</html>
